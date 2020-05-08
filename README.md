@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+A programing API for HTML and XML. it defines the logical structure of documents and the way a document is accessed and manipulated
+
 2. What is an event?
+
+An event is JavaScript's interaction with HTML that occur wht the user or brower manipulates a page
 
 3. What is an event listener?
 
+it is a inbuilt function in JavaScript which takes an event to listen for and a second argument to be called whenever the described event gets fired.
+
 4. Why would we convert a NodeList into an Array?
 
+because a NodeList cannot use array Methods
+
 5. What is a component?
+
+A small potentially reuseable set of logic, behaviors and interface elements that return UI
 
 ### Git Set up
 
