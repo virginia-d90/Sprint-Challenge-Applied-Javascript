@@ -83,6 +83,16 @@ axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
             const newCard = cardMaker(item)
             attachCards.appendChild(newCard)
         });
+
+        // result.data.articles.forEach(item => {
+        //     topicArr = Array.from(item)
+        //     //return topicArr
+        //     topicArr.forEach(thing => {
+        //         const newCard = cardMaker(thing)
+        //         attachCards.appendChild(newCard)
+        //     })
+            
+        // })
     })
     
     .catch(error => {
