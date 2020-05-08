@@ -59,7 +59,32 @@ function cardMaker(attrs){
 
 axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
     .then(result => {
-        result.data.articles.forEach(item =>{
-            const articleTopic
-        })
+        result.data.articles.bootstrap.forEach(item => {
+            const newCard = cardMaker(item)
+            attachCards.appendChild(newCard)
+        });
+
+        result.data.articles.javascript.forEach(item => {
+            const newCard = cardMaker(item)
+            attachCards.appendChild(newCard)
+        });
+
+        result.data.articles.jquery.forEach(item => {
+            const newCard = cardMaker(item)
+            attachCards.appendChild(newCard)
+        });
+
+        result.data.articles.node.forEach(item => {
+            const newCard = cardMaker(item)
+            attachCards.appendChild(newCard)
+        });
+
+        result.data.articles.technology.forEach(item => {
+            const newCard = cardMaker(item)
+            attachCards.appendChild(newCard)
+        });
+    })
+    
+    .catch(error => {
+        console.log('fail')
     })
